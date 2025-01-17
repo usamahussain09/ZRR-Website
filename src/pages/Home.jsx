@@ -5,6 +5,7 @@ import ServicesSection from '../UI/ServicesSection';
 import DeliveryProcess from '../UI/DeliveryProcess';
 import Projects from '../UI/Projects';
 import Testimonials from '../UI/Testimonials';
+import Faq from '../UI/Faq';
 
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
       <DeliveryProcess/>
       <Projects/>
       <Testimonials   />
-    
+      <Faq/>
     </>
 
   );
