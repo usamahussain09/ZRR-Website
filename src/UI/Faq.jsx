@@ -34,10 +34,10 @@ const Faq=()=> {
   return (
     <div className=" text-white py-20">
       <div className="max-w-[1200px] mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Left Column - Title */}
           <div>
-            <h2 className="text-5xl font-normal leading-tight align-middle mt-16 sm:text-center">
+            <h2 className="text-6xl font-grotesk font-bold leading-tight align-middle mt-16 md:align-center">
               Frequently
               <br />
               Asked
@@ -51,14 +51,14 @@ const Faq=()=> {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-[#111111] rounded-[32px] overflow-hidden transition-all duration-300"
+                className="border border-zinc-800 rounded-xl backdrop-backdrop-sm bg-white/5 overflow-hidden transition-all duration-300"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <div className="px-8 py-6 flex justify-between items-start">
                   <div className="flex-1">
                     <h3 className={`transition-all duration-300 ${
-                      hoveredIndex === index ? 'text-base mb-4' : 'text-lg mb-0'
+                      hoveredIndex === index ? 'text- mb-4' : 'text-lg mb-0'
                     } font-normal pr-8`}>
                       {faq.question}
                     </h3>
