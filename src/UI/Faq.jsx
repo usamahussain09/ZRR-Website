@@ -37,6 +37,7 @@ const Faq=()=> {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column - Title */}
           <div>
+            <h2 className="text-5xl font-normal leading-tight align-middle mt-16 sm:text-center">
               Frequently
               <br />
               Asked
