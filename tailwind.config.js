@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         grotesk: ['Space Grotesk', 'sans-serif'], // Add Space Grotesk here
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

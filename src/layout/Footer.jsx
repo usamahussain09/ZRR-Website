@@ -15,7 +15,7 @@ const Footer = () => {
             <Link to="/" className="inline-block">
             <img src={logo || "/placeholder.svg"} alt="HAYDEVS Logo" />
             </Link >
-            <p className="text-gray-400 max-w-md">
+            <p className="text-white font-poppins text-base max-w-sm">
               Haydevs - the leading digital agency based in the UK, working with top-tier clients, from start-ups to enterprises.
             </p>
           </div>
@@ -26,35 +26,35 @@ const Footer = () => {
             <div className="space-y-2">
               <a 
                 href="mailto:info@haydevs.com" 
-                className="flex items-center justify-start md:justify-end text-gray-400 hover:text-white transition-colors"
+                className="flex items-center justify-start md:justify-end text-white font-poppins text-base hover:text-[#8447E9] transition-colors"
               >
-                <MdEmail className="h-4 w-4 mr-2" />
+                <MdEmail className="h-5 w-5 mr-2" />
                 info@haydevs.com
               </a>
               <a 
                 href="tel:(001)1231234" 
-                className="flex items-center justify-start md:justify-end text-gray-400 hover:text-white transition-colors"
+                className="flex items-center justify-start md:justify-end text-white font-poppins text-base hover:text-[#8447E9] transition-colors"
               >
-                <MdPhone className="h-4 w-4 mr-2" />
+                <MdPhone className="h-4 w-4 mr-2 " />
                 (001) 1231 4345
               </a>
             </div>
 
             {/* Social icons */}
             <div className="flex gap-4 justify-start md:justify-end">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-white font-poppin text-base hover:text-[#8447E9] transition-colors">
                 <FaFacebookF className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-white font-poppin text-base hover:text-[#8447E9] transition-colors">
                 <FaInstagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-white font-poppin text-base hover:text-[#8447E9] transition-colors">
                 <FaLinkedinIn className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-white font-poppin text-base hover:text-[#8447E9] transition-colors">
                 <FaDribbble className="h-5 w-5" />
                 <span className="sr-only">Dribbble</span>
               </a>
@@ -68,27 +68,27 @@ const Footer = () => {
           <nav>
             <ul className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-white text-base font-poppins hover:text-[#8447E9] transition-colors">
                   Process
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-white text-base font-poppins hover:text-[#8447E9] transition-colors">
                   Benefits
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-white text-base font-poppins hover:text-[#8447E9] transition-colors">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-white text-base font-poppins hover:text-[#8447E9] transition-colors">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-white text-base font-poppins hover:text-[#8447E9] transition-colors">
                   FAQ
                 </a>
               </li>
@@ -96,7 +96,7 @@ const Footer = () => {
           </nav>
 
           {/* Copyright */}
-          <p className="text-gray-400 text-sm">
+          <p className="text-white text-base font-poppins">
             © 2025 xAhmad - All Right Reserved
           </p>
         </div>

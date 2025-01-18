@@ -37,7 +37,7 @@ const Faq=()=> {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Left Column - Title */}
           <div>
-            <h2 className="text-6xl font-grotesk font-bold leading-tight align-middle mt-16 md:align-center">
+            <h2 className="text-6xl font-grotesk font-bold leading-tight align-middle mt-16 md:align-center sm:text-base md:text-xl lg:text-6xl">
               Frequently
               <br />
               Asked
@@ -58,7 +58,7 @@ const Faq=()=> {
                 <div className="px-8 py-6 flex justify-between items-start">
                   <div className="flex-1">
                     <h3 className={`transition-all duration-300 ${
-                      hoveredIndex === index ? 'text- mb-4' : 'text-lg mb-0'
+                      hoveredIndex === index ? 'text- mb-2' : 'text-lg mb-0'
                     } font-normal pr-8`}>
                       {faq.question}
                     </h3>
@@ -66,7 +66,7 @@ const Faq=()=> {
                     <div 
                       className={`overflow-hidden transition-all duration-300 ease-in-out text-gray-400 ${
                         hoveredIndex === index 
-                          ? 'max-h-[200px] opacity-100' 
+                          ? 'max-h-[50px] opacity-100' 
                           : 'max-h-0 opacity-0'
                       }`}
                     >

@@ -54,7 +54,7 @@ const Testimonials=()=> {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="border p-8 rounded-3xl border-zinc-800 transition-transform hover:bg-gradient-to-l hover:from-gray-600 shadow-md hover:shadow-xl"
+                className="border p-8 rounded-3xl  border-zinc-800 transition-transform hover:bg-gradient-to-l hover:from-gray-600 shadow-md hover:shadow-xl"
               >
                 {/* Profile section with exact spacing */}
                 <div className="mb-4">
