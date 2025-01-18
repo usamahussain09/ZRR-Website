@@ -1,87 +1,81 @@
 import t1 from '../assets/t1.png'
 import t2 from '../assets/t2.png'
 import t3 from '../assets/t3.png'
-const Testimonials=()=> {
-    const testimonials = [
-      {
-        name: "Mugraha",
-        role: "Fonder of Mangcoding",
-        image: t1,
-        text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
-      },
-      {
-        name: "Alex jounky",
-        role: "Fonder of Relia",
-        image: t2,
-        text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
-      },
-      {
-        name: "Chelsia alexy",
-        role: "Fonder of Frank",
-        image: t3,
-        text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
-      },
-      {
-        name: "Mugraha",
-        role: "Fonder of Mangcoding",
-        image: t1,
-        text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
-      },
-      {
-        name: "Alex jounky",
-        role: "Fonder of Relia",
-        image: t2,
-        text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
-      },
-      {
-        name: "Chelsia alexy",
-        role: "Fonder of Frank",
-        image: t3,
-        text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
-      }
-    ]
-  
-    return (
-      <div className="min-h-screen  text-white py-20">
-        <div className="max-w-[1200px] mx-auto px-4">
-          {/* Header - Exactly centered as per design */}
-          <h2 className="font-grotesk text-4xl font-normal text-center mb-20">
-            What they say about us
-          </h2>
-  
-          {/* Testimonials Grid - Exact 3x2 layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className=" p-8 rounded-3xl [background:radial-gradient(190.4%_308.48%_at_180.05%_178.81%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.18)_45.27%,rgba(255,255,255,0)_100%)] 
-  [border-image-source:linear-gradient(121.69deg,rgba(255,255,255,0.64)_0%,rgba(255,255,255,0)_51.73%,#FFFFFF_100%)] 
-  border-[1.5px] border-solid 
-  backdrop-blur-[32px] 
-  [animation-timing-function:ease-out] 
-  [animation-duration:1300ms]">
-                {/* Profile section with exact spacing */}
-                <div className="mb-4">
-                  <img
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    className="w-10 h-10 rounded-full object-cover mb-4"
-                  />
-                  <div className="space-y-1">
-                    <h3 className="text-base font-grotesk font-normal">{testimonial.name}</h3>
-                    <p className="text-sm text-white font-grotesk">{testimonial.role}</p>
-                  </div>
+const Testimonials = () => {
+  const testimonials = [
+    {
+      name: "Mugraha",
+      role: "Fonder of Mangcoding",
+      image: t1,
+      text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
+    },
+    {
+      name: "Alex jounky",
+      role: "Fonder of Relia",
+      image: t2,
+      text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
+    },
+    {
+      name: "Chelsia alexy",
+      role: "Fonder of Frank",
+      image: t3,
+      text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
+    },
+    {
+      name: "Mugraha",
+      role: "Fonder of Mangcoding",
+      image: t1,
+      text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
+    },
+    {
+      name: "Alex jounky",
+      role: "Fonder of Relia",
+      image: t2,
+      text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
+    },
+    {
+      name: "Chelsia alexy",
+      role: "Fonder of Frank",
+      image: t3,
+      text: "Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress"
+    }
+  ]
+
+  return (
+    <div className="min-h-screen  text-white py-20">
+      <div className="max-w-[1200px] mx-auto px-4">
+        {/* Header - Exactly centered as per design */}
+        <h2 className="font-grotesk text-4xl font-normal text-center mb-20">
+          What they say about us
+        </h2>
+
+        {/* Testimonials Grid - Exact 3x2 layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className=" p-8 rounded-3xl [background:radial-gradient(190.4%_308.48%_at_180.05%_178.81%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.18)_45.27%,rgba(255,255,255,0)_100%)] [border-image-source:linear-gradient(121.69deg,rgba(255,255,255,0.64)_0%,rgba(255,255,255,0)_51.73%,#FFFFFF_100%)] border-[1.5px] border-solid backdrop-blur-[32px] [animation-timing-function:ease-out] [animation-duration:1300ms]">
+              {/* Profile section with exact spacing */}
+              <div className="mb-4">
+                <img
+                  src={testimonial.image || "/placeholder.svg"}
+                  alt={testimonial.name}
+                  className="w-10 h-10 rounded-full object-cover mb-4"
+                />
+                <div className="space-y-1">
+                  <h3 className="text-base font-grotesk font-normal">{testimonial.name}</h3>
+                  <p className="text-sm text-white font-grotesk">{testimonial.role}</p>
                 </div>
-                {/* Testimonial text with exact styling */}
-                <p className="text-[#FFFFFF] text-base leading-relaxed font-grotesk">
-                  {testimonial.text}
-                </p>
               </div>
-            ))}
-          </div>
+              {/* Testimonial text with exact styling */}
+              <p className="text-[#FFFFFF] text-base leading-relaxed font-grotesk">
+                {testimonial.text}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    )
-  }
-  export default Testimonials;
-  
+    </div>
+  )
+}
+export default Testimonials;
