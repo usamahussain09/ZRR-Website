@@ -54,8 +54,12 @@ const Testimonials=()=> {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="border p-8 rounded-3xl  border-zinc-800 transition-transform hover:bg-gradient-to-l hover:from-gray-600 shadow-md hover:shadow-xl"
-              >
+                className=" p-8 rounded-3xl [background:radial-gradient(190.4%_308.48%_at_180.05%_178.81%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.18)_45.27%,rgba(255,255,255,0)_100%)] 
+  [border-image-source:linear-gradient(121.69deg,rgba(255,255,255,0.64)_0%,rgba(255,255,255,0)_51.73%,#FFFFFF_100%)] 
+  border-[1.5px] border-solid 
+  backdrop-blur-[32px] 
+  [animation-timing-function:ease-out] 
+  [animation-duration:1300ms]">
                 {/* Profile section with exact spacing */}
                 <div className="mb-4">
                   <img
