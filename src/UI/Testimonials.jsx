@@ -45,7 +45,7 @@ const Testimonials = () => {
     <div className="min-h-screen  text-white py-20">
       <div className="max-w-[1200px] mx-auto px-4">
         {/* Header - Exactly centered as per design */}
-        <h2 className="font-grotesk text-4xl font-normal text-center mb-20">
+        <h2 className="font-grotesk text-4xl font-bold text-center mb-20">
           What they say about us
         </h2>
 
@@ -54,7 +54,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className=" p-8 rounded-3xl [background:radial-gradient(190.4%_308.48%_at_180.05%_178.81%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.18)_45.27%,rgba(255,255,255,0)_100%)] [border-image-source:linear-gradient(121.69deg,rgba(255,255,255,0.64)_0%,rgba(255,255,255,0)_51.73%,#FFFFFF_100%)] border-[1.5px] border-solid backdrop-blur-[32px] [animation-timing-function:ease-out] [animation-duration:1300ms]">
+              className=" p-8 rounded-3xl border border-[#FFFFFF] border-opacity-10 hover:[background:radial-gradient(190.4%_308.48%_at_180.05%_178.81%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.18)_45.27%,rgba(255,255,255,0)_100%)] hover:backdrop-blur-[1px] hover:transition-all duration-300 ease-in-out ">
               {/* Profile section with exact spacing */}
               <div className="mb-4">
                 <img

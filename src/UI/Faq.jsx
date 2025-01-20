@@ -32,12 +32,12 @@ const Faq=()=> {
   ]
 
   return (
-    <div className=" text-white py-20">
+    <div className=" text-white py-10">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Left Column - Title */}
           <div>
-            <h2 className="text-6xl font-grotesk font-bold leading-tight align-middle mt-16 md:align-center sm:text-base md:text-xl lg:text-6xl">
+            <h2 className=" sm:text-4xl text-base-content text-6xl font-grotesk font-bold leading-tight align-middle mt-16 md:align-center md:text-xl lg:text-6xl">
               Frequently
               <br />
               Asked
@@ -51,22 +51,22 @@ const Faq=()=> {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="border border-zinc-800 rounded-xl backdrop-backdrop-sm bg-white/5 overflow-hidden transition-all duration-300"
+                className=" rounded-xl bg-white/5 overflow-hidden transition-all duration-300"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="px-8 py-6 flex justify-between items-start">
+                <div className="px-8 py-8 flex justify-between items-start border border-[#FFFFFF] border-opacity-10 hover:[background:radial-gradient(190.4%_308.48%_at_180.05%_178.81%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.18)_45.27%,rgba(255,255,255,0)_100%)] hover:backdrop-blur-[1px]">
                   <div className="flex-1">
-                    <h3 className={`transition-all duration-300 ${
-                      hoveredIndex === index ? 'text- mb-2' : 'text-lg mb-0'
-                    } font-normal pr-8`}>
+                    <h3 className={`transition-all duration-300 font-grotesk font-bold ${
+                      hoveredIndex === index ? 'text-[10px] py-1' : 'text-lg mb-0'
+                    }  pr-2`}>
                       {faq.question}
                     </h3>
                     
                     <div 
-                      className={`overflow-hidden transition-all duration-300 ease-in-out text-gray-400 ${
+                      className={`overflow-hidden transition-all duration-300 ease-in-out text-white font-grotesk text-[18px] ${
                         hoveredIndex === index 
-                          ? 'max-h-[50px] opacity-100' 
+                          ? 'max-h-[90px] opacity-100' 
                           : 'max-h-0 opacity-0'
                       }`}
                     >

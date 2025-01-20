@@ -44,7 +44,7 @@ const ServicesSection = () => {
       {services.map((service, index) => (
         <div
           key={index}
-          className="py-8 px-6 rounded-3xl border-[2px] border-zinc-800 transition-transform hover:bg-gradient-to-l hover:from-gray-600 shadow-md hover:shadow-xl"
+          className="py-8 px-6 rounded-3xl border border-[#FFFFFF] border-opacity-10 hover:[background:radial-gradient(190.4%_308.48%_at_180.05%_178.81%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.18)_45.27%,rgba(255,255,255,0)_100%)] hover:backdrop-blur-[1px] hover:[animation-timing-function:ease-out] hover:[animation-duration:1300ms]"
         >
           {/* Icon */}
           <div className="mb-6">

@@ -14,7 +14,7 @@ const services = [
 const Carousel = () => {
   return (
     <>
-    <p className=" font-grotesk flex items-center justify-center text-white text-sm tracking-tight sm:text-sm md:text-xl lg:text-sm xsm:text-sm">Trusted By 250+ Companies</p>
+    <p className=" font-grotesk flex items-center justify-center text-white text-lg tracking-tight sm:text-sm md:text-xl lg:text-lg">Trusted By 250+ Companies</p>
     <div className="overflow-hidden whitespace-nowrap">
         
         <div className="my-8 inline-block animate-marquee">
