@@ -2,48 +2,9 @@ import p1 from "../assets/p1.png";
 import p1_hover from "../assets/p1-hover.png";
 import p3 from "../assets/p3.png";
 import p3_hover from "../assets/p3-hover.png";
+import { Link } from "react-router-dom";
 
-const ProjectsShowcase=()=> {
- 
-  
-  // const projects = [
-  //   {
-  //     title: "Verbalizelt",
-  //     type: "Mobile App",
-  //     image: p1, // Directly use imported image
-  //     // First row split payment UI
-  //   },
-  //   {
-  //     title: "Jualan",
-  //     type: "Website",
-  //     image: p1,
-  //     // First row website display
-  //   },
-  //   {
-  //     title: "Verbalizelt",
-  //     type: "Mobile App",
-  //     image: p3,
-  //     // First row energy consumption UI
-  //   },
-  //   {
-  //     title: "Verbalizelt",
-  //     type: "Mobile App",
-  //     image: p3,
-  //     // Second row split payment UI
-  //   },
-  //   {
-  //     title: "Jualan",
-  //     type: "Website",
-  //     image: p3,
-  //     // Second row website display
-  //   },
-  //   {
-  //     title: "Verbalizelt",
-  //     type: "Mobile App",
-  //     image: p3,
-  //     // Second row energy consumption UI
-  //   }
-  // ];
+const ProjectsShowcase = () => {
   const projects = [
     {
       title: "Verbalizelt",
@@ -82,7 +43,7 @@ const ProjectsShowcase=()=> {
       hoverImage: p3_hover, // Image on hover
     },
   ];
-  
+
   return (
     <div className="text-white mb-10">
       <div className="max-w-[1200px] mx-auto px-4">
@@ -99,7 +60,7 @@ const ProjectsShowcase=()=> {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {projects.map((project, index) => (
-            <div key={index} className="group">
+            <Link to={`/mywork/${project.id}`} key={index} className="group">
               <div className="rounded-3xl overflow-hidden bg-transparent border-[1px] mb-4 relative">
                 <img
                   src={project.image}
@@ -116,7 +77,7 @@ const ProjectsShowcase=()=> {
                 <h3 className="text-xl font-grotesk font-medium mb-1">{project.title}</h3>
                 <p className="text-white font-grotesk text-lg">{project.type}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -125,4 +86,3 @@ const ProjectsShowcase=()=> {
 };
 
 export default ProjectsShowcase;
-  
