@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <Link to="/" className="inline-block">
-            <img src={logo || "/placeholder.svg"} alt="HAYDEVS Logo" />
+            <img src={logo} alt="HAYDEVS Logo" />
             </Link >
 
         {/* Desktop Menu */} 
