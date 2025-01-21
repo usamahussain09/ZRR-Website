@@ -15,7 +15,6 @@ body {
   @keyframes moveStarsCircular {
     0% {
       background-position: 0 0;
-     
     }
      20% {
       background-position: 500px 0;

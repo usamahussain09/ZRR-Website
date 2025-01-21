@@ -1,5 +1,6 @@
 import { ArrowLeft } from "lucide-react"
 import { ArrowRight } from "lucide-react"
+import contact from '../assets/contact.svg'
 
 const Talk=()=> {
   return (
@@ -14,7 +15,7 @@ const Talk=()=> {
           {/* Left Column - Form */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-6xl md:text-5xl font-grotesk font-medium leading-tight">
+              <h1 className="text-6xl md:text-5xl font-grotesk font-medium">
                 Interested?
                 <br />
                 Let's talk!
@@ -30,7 +31,7 @@ const Talk=()=> {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full bg-transparent border-b border-white py-2 focus:border-purple-500 focus:outline-none transition-colors placeholder:text-white text-2xl"
+                  className="w-full bg-transparent border-b border-white py-2 focus:border-purple-500 focus:outline-none transition-colors placeholder:text-white text-2xl font-grotesk"
                 />
               </div>
 
@@ -38,19 +39,19 @@ const Talk=()=> {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="w-full bg-transparent border-b border-white py-2 focus:border-purple-500 focus:outline-none transition-colors placeholder:text-white text-2xl"
+                  className="w-full bg-transparent border-b border-white py-2 focus:border-purple-500 focus:outline-none transition-colors placeholder:text-white text-2xl font-grotesk"
                 />
               </div>
 
-              <div className="mb-4">
+              <div>
                 <input
                   type="text"
                   placeholder="Tell Us About Your Project"
-                  className="w-full bg-transparent border-b border-white py-2 focus:border-purple-500 focus:outline-none transition-colors placeholder:text-white text-2xl"
+                  className="mb-6 w-full bg-transparent border-b border-white py-2 focus:border-purple-500 focus:outline-none transition-colors placeholder:text-white text-2xl font-grotesk"
                 />
               </div>
 
-              <button className="bg-[#8447E9] text-white px-6 py-3 mt-5 hover:bg-[#7435e9] transition-colors flex items-center gap-2">
+              <button className="bg-[#8447E9] text-white px-6 py-3 hover:bg-[#7435e9] transition-colors flex items-center gap-2">
                 Send Request
                 <span className="text-xl"><ArrowRight className="w-5 pt-1"/></span>
               </button>
@@ -59,9 +60,9 @@ const Talk=()=> {
 
           {/* Right Column - 3D Object */}
           <div className="hidden lg:flex justify-center items-center">
-            <div className="w-[400px] h-[400px] relative animate-[spin_20s_linear_infinite]">
+            <div className="w-[400px] h-[400px] relative animate">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src={contact}
                 alt="3D Geometric Shape"
                 className="w-full h-full object-contain"
               />

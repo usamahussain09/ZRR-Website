@@ -9,16 +9,12 @@ import { ArrowLeft } from "lucide-react"
 const PortfolioDetails = () => {
 
     const { id } = useParams();
-
-
     // Find the portfolio item by ID
     const portfolioItem = portfolioData.find((item) => item.id === parseInt(id, 10));
-
     // If no portfolio item is found
     if (!portfolioItem) {
         return <h1>Portfolio not found</h1>;
     }
-
     return (
         <div className="text-white mb-4  ">
         {/* Header with back navigation */}
