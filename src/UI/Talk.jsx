@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react"
 
 const Talk=()=> {
   return (
-    <div className="min-h-screen text-white  py-8">
+    <div className=" text-white py-8">
       {/* Back Button */}
       <button className="lg:ml-72 md:ml-20 sm:ml-10 top-8 left-8  hover:opacity-75 transition-opacity" aria-label="Back to home">
         <ArrowLeft className="w-[30px] h-6" />

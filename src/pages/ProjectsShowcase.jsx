@@ -3,7 +3,7 @@ import portfolio from "../api/portfolio.json"
 
 const ProjectsShowcase = () => {
   return (
-    <div className="text-white mb-10">
+    <div className="text-white mb-14">
       <div className="max-w-[1200px] mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-20">
