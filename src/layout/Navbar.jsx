@@ -37,12 +37,12 @@ const Navbar = () => {
 
         {/* "Let's Talk" Button */}
         <div className="hidden md:flex">
-          <button className="flex items-center  px-4 py-1 gap-2 hover:text-[#8447E9] transition hover:border-[#8447E9]">
-            <span className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center hover:border-[#8447E9]">
-              <MdEmail />
-            </span>
-            <span className="mr-2 font-grotesk text-base">Let's Talk</span>
-          </button>
+        <Link to="/Contact" className="flex items-center px-4 py-1 gap-2 hover:text-[#8447E9] transition hover:border-[#8447E9]">
+          <span className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center hover:border-[#8447E9]">
+            <MdEmail />
+          </span>
+          <span className="mr-2 font-grotesk text-base">Let's Talk</span>
+        </Link>
         </div>
 
         {/* Hamburger Menu Button */}

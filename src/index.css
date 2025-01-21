@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    height: 100%;
+   
+    background-image: url('./assets/bg.png') ;  
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: moveStarsCircular 60s linear infinite;
+  }
+  
+  @keyframes moveStarsCircular {
+    0% {
+      background-position: 0 0;
+     
+    }
+     20% {
+      background-position: 500px 0;
+    }
+    40% {
+      background-position: 1000px 0;
+    }
+    60% {
+      background-position: 1000px 500px;
+    }
+    80% {
+      background-position: 1000px 1000px;
+    }
+    100% {
+      background-position: 0 1000px;
+    }
+  }

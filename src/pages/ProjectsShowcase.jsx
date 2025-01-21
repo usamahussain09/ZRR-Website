@@ -1,50 +1,7 @@
-import p1 from "../assets/p1.png";
-import p1_hover from "../assets/p1-hover.png";
-import p3 from "../assets/p3.png";
-import p3_hover from "../assets/p3-hover.png";
 import { Link } from "react-router-dom";
 import portfolio from "../api/portfolio.json"
 
 const ProjectsShowcase = () => {
-//   const projects = [
-//     {
-//       title: "Verbalizelt",
-//       type: "Mobile App",
-//       image: p1,
-//       hoverImage: p1_hover, // Image on hover
-//     },
-//     {
-//       title: "Jualan",
-//       type: "Website",
-//       image: p3,
-//       hoverImage: p3_hover, // Image on hover
-//     },
-//     {
-//       title: "Verbalizelt",
-//       type: "Mobile App",
-//       image: p1,
-//       hoverImage: p1_hover, // Image on hover
-//     },
-//     {
-//       title: "Verbalizelt",
-//       type: "Mobile App",
-//       image: p3,
-//       hoverImage: p3_hover, // Image on hover
-//     },
-//     {
-//       title: "Jualan",
-//       type: "Website",
-//       image: p1,
-//       hoverImage: p1_hover, // Image on hover
-//     },
-//     {
-//       title: "Verbalizelt",
-//       type: "Mobile App",
-//       image: p3,
-//       hoverImage: p3_hover, // Image on hover
-//     },
-//   ];
-
   return (
     <div className="text-white mb-10">
       <div className="max-w-[1200px] mx-auto px-4">

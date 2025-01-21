@@ -6,7 +6,7 @@ import ServicesSection from '../UI/ServicesSection';
 import DeliveryProcess from '../UI/DeliveryProcess';
 import Testimonials from '../UI/Testimonials';
 import Faq from '../UI/Faq';
-import ProjectsShowcase from './Projects';
+import ProjectsShowcase from './ProjectsShowcase';
 
 
 const Home = () => {
