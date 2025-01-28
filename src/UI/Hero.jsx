@@ -47,12 +47,12 @@ const Hero = () => {
                   text-[min(0.875rem,3vw)]
                 `}
                             >
-                                {orbit === 1 && <img src={six} alt="VS" className="w-50 h-16" />}
-                                {orbit === 2 && <img src={five} alt="Ai" className="w-16 h-16" />}
-                                {orbit === 3 && <img src={four} alt="Fg" className="w-16 h-16" />}
-                                {orbit === 4 && <img src={three} alt="Fg" className="w-16 h-16" />}
-                                {orbit === 5 && <img src={two} alt="Unity" className="w-16 h-16" />}
-                                {orbit === 6 && <img src={one} alt="HTML" className="w-16 h-16" />}
+                                {orbit === 1 && <img src={six} alt="VS" className="w-50 h-16" loading="lazy" />}
+                                {orbit === 2 && <img src={five} alt="Ai" className="w-16 h-16" loading="lazy" />}
+                                {orbit === 3 && <img src={four} alt="Fg" className="w-16 h-16" loading="lazy" />}
+                                {orbit === 4 && <img src={three} alt="Fg" className="w-16 h-16" loading="lazy" />}
+                                {orbit === 5 && <img src={two} alt="Unity" className="w-16 h-16" loading="lazy" />}
+                                {orbit === 6 && <img src={one} alt="HTML" className="w-16 h-16" loading="lazy" />}
                             </div>
                         </div>
                     </div>
