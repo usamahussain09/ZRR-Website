@@ -51,7 +51,7 @@ const Faq=()=> {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className=" rounded-xl bg-white/5 overflow-hidden transition-all duration-300"
+                className=" rounded-xl  overflow-hidden transition-all duration-300"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >

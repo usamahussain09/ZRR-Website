@@ -1,30 +1,31 @@
 import { ArrowLeft } from "lucide-react"
 import { ArrowRight } from "lucide-react"
 import contact from '../assets/contact.svg'
+import { Link } from "react-router-dom"
 
 const Talk=()=> {
   return (
     <div className=" text-white py-8">
       {/* Back Button */}
-      <button className="lg:ml-72 md:ml-20 sm:ml-10 top-8 left-8  hover:opacity-75 transition-opacity" aria-label="Back to home">
-        <ArrowLeft className="w-[30px] h-6" />
-      </button>
+      <Link to='/' className="hover:opacity-75 transition-opacity" aria-label="Back to home">
+        <ArrowLeft className="lg:ml-64 md:ml-20 sm:ml-10 w-[30px] h-6" />
+      </Link>
 
       <div className="max-w-[1200px] mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center pt-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-center pt-12 pl-4 pr-4">
           {/* Left Column - Form */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-6xl md:text-5xl font-grotesk font-medium">
+              <h1 className="text-6xl font-grotesk font-medium">
                 Interested?
                 <br />
                 Let's talk!
               </h1>
-              <p className="font-grotesk text-2xl max-w-md">
+              <p className="font-grotesk lg:text-2xl md:text-xl sm:text-lg max-w-md">
                 Just fill this form and we will contact you promptly to discuss your project. Hate forms? Drop us a
-                message at <span className="text-2xl font-medium">info@Haydevs.com.</span>
+                message at <span className="lg:text-2xl md:text-xl sm:text-lg font-medium">info@Haydevs.com.</span>
               </p>
-            </div>
+            </div>   
 
             <div className="space-y-6">
               <div>

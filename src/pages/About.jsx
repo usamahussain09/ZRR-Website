@@ -1,13 +1,14 @@
-import React from 'react';
+import AboutDetails from "../UI/AboutDetail"
+import Faq from "../UI/Faq"
+
 
 const About = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">About HAYDEVS</h1>
-      <p>Information about your company and team.</p>
-    </div>
-  );
-};
-
-export default About;
-
+    <>
+      <AboutDetails />
+      <div style={{ margin: '50px 0' }}></div>
+      <Faq />
+    </>
+  )
+}
+export default About
