@@ -47,7 +47,7 @@ const AboutDetails = () => {
                   onClick={() => setActiveTab("mission")}
                   className={`pb-2 border-b-2 transition-colors ${activeTab === "mission"
                     ? "text-white border-white font-grotesk font-bold text-lg"
-                    : " text-white border-white font-grotesk font-bold text-lg border-transparent hover:text-gray-300"
+                    : " text-white  font-grotesk font-bold text-lg border-transparent hover:text-gray-300"
                     }`}
                 >
                   Our Mission
@@ -56,7 +56,7 @@ const AboutDetails = () => {
                   onClick={() => setActiveTab("vision")}
                   className={`text-lg sm:text-xl font-medium pb-2 border-b-2 transition-colors ${activeTab === "vision"
                     ? "text-white border-white font-grotesk font-bold text-lg"
-                    : " text-white border-white font-grotesk font-bold text-lg border-transparent hover:text-gray-300"
+                    : " font-grotesk text-lg border-transparent hover:text-gray-300"
                     }`}
                 >
                   Our Vision
